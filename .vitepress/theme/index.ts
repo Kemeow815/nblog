@@ -1,5 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
-import type { Theme } from 'vitepress'
+import { Theme } from 'vitepress'
 import NewLayout from './components/NewLayout.vue'
 import Archives from './components/Archives.vue'
 import Category from './components/Category.vue'
@@ -13,6 +13,7 @@ import NBlockHeading from './components/NBlockHeading.vue'
 import NBlockImage from './components/NBlockImage.vue'
 import NBlockParagraph from './components/NBlockParagraph.vue'
 import NRichText from './components/NRichText.vue'
+import NBlockBullet from './components/NBlockBullet.vue'
 
 const components = {
     NContent,
@@ -20,6 +21,7 @@ const components = {
     NBlockCode,
     NBlockHeading,
     NBlockImage,
+    NBlockBullet,
     NBlockParagraph,
     NRichText
 }
@@ -27,7 +29,7 @@ const components = {
 import './custom.css'
 
 export default {
-    ...DefaultTheme,
+    extends: DefaultTheme,
     Layout: NewLayout,
     enhanceApp({ app }) {
         // register global compoment
