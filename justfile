@@ -9,6 +9,7 @@ default:
   just --list
 
 dev:
+   pnpm install
    pnpm run dev
 
 build:
