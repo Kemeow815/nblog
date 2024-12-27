@@ -8,11 +8,17 @@ API_HOST := "https://api.notion.com/v1"
 default:
   just --list
 
+inst:
+  echo "Installing..."
+  pnpm install
+
 dev:
-   pnpm install
-   pnpm run dev
+  just inst
+  echo "Building..."
+  pnpm run dev
 
 build:
+  just inst
+  echo "Building..."
   echo $NOTION_TOKEN
-  pnpm install
   pnpm run build
