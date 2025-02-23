@@ -1,7 +1,7 @@
 set export
 
-NOTION_TOKEN := ""
-DATABASE_ID := "12476b6af58e41738258b896720a8f89"
+NOTION_TOKEN := "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"
+DATABASE_ID := "1a25da7cb53e80c49fb1e2168d1b5a4a"
 API_HOST := "https://api.notion.com/v1"
 
 
